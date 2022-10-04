@@ -102,7 +102,6 @@ header figure img:hover {
 article.hero {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 5% 10% 7.5%;
 }
 
@@ -110,7 +109,6 @@ article.hero section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 200px;
 }
 
 article.hero section p {
