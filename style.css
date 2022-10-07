@@ -98,11 +98,13 @@ header nav menu {
     gap: 20px;
 }
 
-header nav menu li {
+header nav menu li,
+footer nav menu li {
     list-style: none;
 }
 
-header nav menu li a {
+header nav menu li a, 
+footer nav menu li a {
     text-decoration: none;
 }
 
@@ -215,4 +217,205 @@ footer {
     display: flex;
     justify-content: center;
     padding: 3.5%;
+}
+
+footer nav {
+    display: none;
+}
+
+/* Responsive 1024px-1439px */
+@media(max-width: 1439px) {
+    article.hero {
+        padding: 4% 5% 7.5%;
+    }
+    article.hero figure {
+        display: flex;
+        align-items: center;
+    }
+    article.hero figure img {
+        height: 160px;
+    }
+    .hero-main-text {
+        font-size: 40px;
+    }
+    .hero-secondary-text, .header-link-text {
+        font-size: 15px;
+    }
+    article.hero section a {
+        padding: 5px 24px;
+    }
+    .header-information-text {
+        font-size: 30px;
+    }
+    article.information section figure {
+        width: 17.5%;
+    }
+    .quote-section {
+        padding: 5% 15%;
+    }
+    .quote-text {
+        font-size: 30px;
+    }
+    .quote-section p {
+        font-size: 20px;
+    }
+    aside.call-to-action {
+        width: 80%;
+    }
+    aside.call-to-action section p.hero-main-text {
+        font-size: 20px;
+    }
+    aside.call-to-action a.cta-btn {
+        padding: 5px 24px;
+        font-size: 16px;
+    }
+}
+
+/* Responsive 768px-1023px */
+@media(max-width: 1023px) {
+    header figure img {
+        height: 36px;
+    }
+    article.hero {
+        padding: 2.5% 5% 7.5%;
+    }
+    article.hero figure img {
+        height: 120px;
+    }
+    .hero-main-text {
+        font-size: 32px;
+    }
+    .hero-secondary-text, .header-link-text {
+        font-size: 12px;
+    }
+    article.hero section a {
+        padding: 4px 20px;
+    }
+    .header-information-text {
+        font-size: 24px;
+    }
+    article.information section figure img {
+        padding: 15px;
+    }
+    .quote-section {
+        padding: 5% 12.5%;
+    }
+    .quote-text {
+        font-size: 24px;
+    }
+    .quote-section p {
+        font-size: 16px;
+    }
+    aside.call-to-action section p.hero-main-text {
+        font-size: 16px;
+    }
+    aside.call-to-action a.cta-btn {
+        padding: 4px 20px;
+        font-size: 13px;
+    }
+}
+
+/* Responsive 576px-767px */
+@media(max-width: 767px) {
+    header figure img {
+        height: 32px;
+    }
+    article.hero {
+        padding: 2.5% 5% 5%;
+    }
+    article.hero figure img {
+        height: 80px;
+    }
+    .hero-main-text {
+        font-size: 24px;
+    }
+    .hero-secondary-text, .header-link-text {
+        font-size: 10px;
+    }
+    article.hero section a {
+        padding: 3px 15px;
+    }
+    .header-information-text {
+        font-size: 20px;
+    }
+    article.information section figure {
+        width: 20%;
+    }
+    article.information section figure img {
+        padding: 10px;
+    }
+    .quote-section {
+        padding: 5% 7.5%;
+    }
+    .quote-text {
+        font-size: 20px;
+    }
+    .quote-section p {
+        font-size: 13px;
+    }
+    aside.call-to-action {
+        width: 90%;
+    }
+    aside.call-to-action section p.hero-main-text {
+        font-size: 14px;
+    }
+    aside.call-to-action a.cta-btn {
+        padding: 3px 15px;
+        font-size: 10px;
+    }
+}
+
+/* Responsive Mobile 0px-575px */
+@media(max-width: 575px) {
+    header {
+        padding: 1% 7.5%;
+    }
+    article.hero {
+        flex-direction: column;
+        gap: 15px;
+    }
+    article.hero section {
+        gap: 10px;
+    }
+    article.hero figure {
+        justify-content: center;
+    }
+    article.hero figure img {
+        height: 25vw;
+    }
+    article.information section {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    article.information section figure {
+        width: 50%;
+    }
+    .quote-text {
+        font-size: 16px;
+    }
+    .quote-section p {
+        font-size: 12px;
+    }
+    aside.call-to-action {
+        padding: 2.5% 7.5%;
+    }
+    aside.call-to-action section p.hero-main-text {
+        font-size: 12px;
+    }
+    aside.call-to-action a.cta-btn {
+        border-width: 1.5px;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    footer nav {
+        display: block;
+    }
+    footer nav menu li {
+        text-align: center;
+        margin: 5px;
+    }
 }
